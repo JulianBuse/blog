@@ -6,6 +6,15 @@ const Posts: CollectionConfig = {
         {
             name: 'title',
             type: 'text'
+        },
+        {
+            name: 'date',
+            type: 'date',
+            defaultValue: () => Date.now()
+        },
+        {
+            name: 'content',
+            type: 'richText',
         }
     ]
 }
